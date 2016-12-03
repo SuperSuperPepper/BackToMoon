@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackToMoon.CSharp", "BackToMoon.CSharp.csproj", "{AB889097-123D-BEB6-36DB-46D74C1633C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackToMoon.CSharp.Editor", "BackToMoon.CSharp.Editor.csproj", "{530C3E8C-47A9-C66E-053F-2C2759841441}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB889097-123D-BEB6-36DB-46D74C1633C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB889097-123D-BEB6-36DB-46D74C1633C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB889097-123D-BEB6-36DB-46D74C1633C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB889097-123D-BEB6-36DB-46D74C1633C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{530C3E8C-47A9-C66E-053F-2C2759841441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530C3E8C-47A9-C66E-053F-2C2759841441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530C3E8C-47A9-C66E-053F-2C2759841441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530C3E8C-47A9-C66E-053F-2C2759841441}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
