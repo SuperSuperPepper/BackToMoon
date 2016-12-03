@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Global : MonoBehaviour {
+public class Global {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public  string SceneName ="";
+
+    private static Global _instance=null;
+
+
+    //单例
+    public static Global GetInstance() {
+        if (_instance != null)
+        {
+            return _instance;
+        }
+        else {
+            _instance = new Global();
+            return _instance;
+        }
+
+    }
 }
