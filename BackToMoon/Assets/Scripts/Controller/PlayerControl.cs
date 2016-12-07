@@ -36,7 +36,7 @@ public class PlayerControl : MonoBehaviour {
         SpeedLimit();
 
 
-        Debug.Log("speed"+rb.velocity);
+        //Debug.Log("speed"+rb.velocity);
         //Debug.Log(_Vertical + "v");
        
     }
