@@ -21,4 +21,7 @@ public class Global {
         }
 
     }
+
+    public Dictionary<string, float> GameTime;
+
 }

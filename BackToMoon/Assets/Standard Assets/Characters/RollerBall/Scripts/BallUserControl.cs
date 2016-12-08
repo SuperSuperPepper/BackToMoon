@@ -2,8 +2,6 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-namespace UnityStandardAssets.Vehicles.Ball
-{
     public class BallUserControl : MonoBehaviour
     {
         private Ball ball; // Reference to the ball controller.
@@ -15,6 +13,9 @@ namespace UnityStandardAssets.Vehicles.Ball
         private Vector3 camForward; // The current forward direction of the camera
         private bool jump; // whether the jump button is currently pressed
 
+
+        private Vector3 tempVec = new Vector3(0, 0, 0);
+        public Vector3 relativePos= new Vector3(0, 0, 0);
 
         private void Awake()
         {
@@ -63,7 +64,20 @@ namespace UnityStandardAssets.Vehicles.Ball
         {
             // Call the Move function of the ball controller
             ball.Move(move, jump);
+            GetMoveDirection();
+
             jump = false;
         }
+
+        public Vector3 GetMoveDirection() {
+        if (transform.position==tempVec) {
+            return Vector3.zero;
+        }
+
+        relativePos = transform.position - tempVec;
+        tempVec = transform.position;
+
+        return relativePos;
+        }
     }
-}
+

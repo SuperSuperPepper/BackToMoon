@@ -23,6 +23,7 @@ public class CameraLook : MonoBehaviour {
 
     void FixedUpdate()
     {
+        
         transform.position = Vector3.Lerp(transform.position, targetTrans.position + offset, Time.deltaTime * smoothing);
     }
 
